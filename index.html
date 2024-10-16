@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Style links  -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-black">
+    <div class="container mx-auto px-16 flex justify-center items-center">
+      <div class="wrapper w-[400px] px-10 h-[440px] rounded-xl bg-white mt-20">
+        <form class="flex flex-col px-5" action="">
+          <label class="font-semibold mt-4" for="">Summani Kiritng</label>
+          <input
+            class="border-2 input border-gray-500 px-6 mt-3 focus:outline-emerald-500"
+            placeholder="raqam kiritng"
+            type="number"
+          />
+          <button
+            class="convert font-medium border-2 w-[110px] bg-black rounded-lg text-white py-1 mt-2 px-6 active:scale-[0.9]"
+          >
+            Convert
+          </button>
+          <br />
+        </form>
+        <label
+          class="font-semibold border ml-6 border-black rounded-md p-1"
+          for=""
+          >From</label
+        >
+        <select name="" id="fromSelect">
+          <option class="font-semibold" selected value="uzs">UZS</option>
+          <option class="font-semibold" value="usd">USD</option>
+          <option class="font-semibold" value="rub">RUB</option>
+        </select>
+
+        <br /><br />
+        <label
+          class="font-semibold border ml-6 border-black rounded-md py-1 px-[13px]"
+          for=""
+          >To</label
+        >
+        <select name="" id="toSelect">
+          <option value="uzs">UZS</option>
+          <option selected value="usd">USD</option>
+          <option value="rub">RUB</option>
+        </select>
+        <br /><br />
+
+        <div class="card1 mt-5 text-center rounded-md font-mono"></div>
+      </div>
+    </div>
+    <noscript>Browser java scriptni qollab quvvatlamaydi</noscript>
+    <script src="./app.js"></script>
+  </body>
+</html>
